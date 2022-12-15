@@ -9,6 +9,18 @@
     "start": "cross-env NODE_ENV=production node ./server.js",
     "typecheck": "tsc -b"
   },
+  "directories": {
+    "serve": [
+      "public",
+      "build"
+    ]
+  },
+  "files": [
+    "public",
+    "build",
+    "server.js"
+  ],
+  "main": "server.js",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/server": "^11.10.0",
