@@ -1,4 +1,4 @@
-import { Modal, ModalProps, Title } from '@mantine/core'
+import { Modal, ModalProps, Text } from '@mantine/core'
 import React from 'react'
 
 const index = (props: ModalProps) => {
@@ -6,7 +6,7 @@ const index = (props: ModalProps) => {
     <Modal
       centered
       {...props}
-      title={<Title size={'h3'}>{props.title}</Title>}
+      title={<Text size={'xl'}>{props.title}</Text>}
       styles={(theme) => ({
         modal: {
           backgroundColor: theme.colors.dark[6],
