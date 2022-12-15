@@ -1,7 +1,0 @@
-export { default as Board } from './board'
-export { default as Player } from './player'
-export { default as Timer } from './timer'
-export { default as Hand } from './hand'
-export { default as GameEnd } from './game-end'
-export { default as Header } from './header'
-export * from './common'
