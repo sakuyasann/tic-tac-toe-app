@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "typecheck": "tsc -b"
+  },
+  "directories": {
+    "serve": [
+      "public",
+      "build"
+    ]
+  },
+  "files": [
+    "public",
+    "build",
+    "server.js"
+  ],
+  "main": "server.js",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@mantine/core": "^5.9.4",
+    "@mantine/hooks": "^5.9.4",
+    "@mantine/nprogress": "^5.9.4",
+    "@mantine/remix": "^5.9.4",
+    "@remix-run/node": "^1.8.2",
+    "@remix-run/react": "^1.8.2",
+    "@remix-run/vercel": "^1.8.2",
+    "@vercel/node": "^2.6.2",
+    "framer-motion": "^7.10.0",
+    "isbot": "^3.6.5",
+    "lottie-react": "^2.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "recoil": "^0.7.6"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.8.2",
+    "@remix-run/eslint-config": "^1.8.2",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "eslint": "^8.27.0",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
