@@ -1,7 +1,5 @@
-import { motion } from 'framer-motion'
-import { Box, Stack } from '@mantine/core'
-import React from 'react'
-import { Board, Player, Hand, Timer, GameEnd, Header } from './components'
+import { Stack } from '@mantine/core'
+import { Board, Player, Hand, GameEnd, Header } from './components'
 import { useTicTacToc } from './hooks'
 
 const index = () => {

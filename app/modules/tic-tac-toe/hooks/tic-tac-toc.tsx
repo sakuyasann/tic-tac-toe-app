@@ -17,6 +17,9 @@ export const useTicTacToc = (options?: TicTacToeOptionType) => {
     0, 0, 0, 0, 0, 0, 0, 0, 0,
   ])
 
+  // 盤面のマスが埋まっていれば終了
+  const [isGameEnd, setIsGameEnd] = useState(false)
+
   // Player1 0
   const player1 = usePlayer()
   // Player2 X
@@ -49,7 +52,7 @@ export const useTicTacToc = (options?: TicTacToeOptionType) => {
   // 盤面がクリックされた時の処理
   const handleClick = (target: number) => {
     // 既に勝敗が決まっていれば無効
-    if (winnerPlayer) return
+    if (winnerPlayer || isGameEnd) return
 
     // 盤面の強さを確認し、上書きできるか確認
     const player = isNextX ? player1 : player2
@@ -73,6 +76,10 @@ export const useTicTacToc = (options?: TicTacToeOptionType) => {
     setIsNextX(!isNextX)
   }
 
+  useEffect(() => {
+    setIsGameEnd(boardState.filter((f) => f === null).length === 0)
+  }, [boardState])
+
   return {
     boardState,
     boardStrength,
@@ -81,6 +88,7 @@ export const useTicTacToc = (options?: TicTacToeOptionType) => {
     isNextX,
     player1,
     player2,
+    isGameEnd,
   }
 }
 
