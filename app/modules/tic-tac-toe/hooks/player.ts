@@ -8,9 +8,9 @@ interface DeckType {
 }
 
 const DEFAULT_DECK: DeckType = {
-  1: 5,
+  1: 6,
   2: 5,
-  3: 5,
+  3: 4,
 }
 
 const DeckToArray = (obj: DeckType) => {
