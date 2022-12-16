@@ -18,6 +18,19 @@ const DUMMY = [
     ],
   },
   {
+    title: `2022.12.16_0.2.0`,
+    message: [
+      {
+        type: 'update',
+        message: '全てのマスが埋まった時、引き分けになるように修正',
+      },
+      {
+        type: 'update',
+        message: 'デッキの強さの配分を調整',
+      },
+    ],
+  },
+  {
     title: `2022.12.15_0.1.0`,
     message: [
       {
@@ -45,7 +58,7 @@ const index = () => {
       >
         <Timeline
           color="violet"
-          active={0}
+          active={data.length - 2}
           reverseActive
           bulletSize={12}
           styles={(theme) => ({

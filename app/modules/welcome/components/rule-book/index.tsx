@@ -35,6 +35,9 @@ const index = () => {
             交互にマスを埋めていき、先に縦、横、斜め
             いずれかに同じマークが揃った方が勝ちです
           </List.Item>
+          <List.Item>
+            マスが全て埋まり、勝敗が決まっていないときは引き分けになります
+          </List.Item>
         </List>
         <Group position="center" mt={'lg'}>
           <IconButton onClick={handle.close}>
