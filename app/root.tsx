@@ -13,6 +13,7 @@ import { LibMantineTheme } from './share'
 import { RecoilRoot } from 'recoil'
 import manifest from '../public/manifest.webmanifest'
 import { AnimatePresence, motion } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -51,6 +52,7 @@ export default function App() {
               </motion.div>
             </AnimatePresence>
           </RecoilRoot>
+          <Analytics />
           <ScrollRestoration />
           <Scripts />
           <LiveReload />
